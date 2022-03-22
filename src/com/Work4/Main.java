@@ -27,10 +27,10 @@ public class Main {
                 System.out.println("Победили AI Apple");
                 break;
             }
-            if (checkWin(map, DOT_Y)) {
+            /*if (checkWin(map, DOT_Y)) {
                 System.out.println("Победили AI Apple");
                 break;
-            }
+            }*/
             if (isMapFull(map)) {
                 System.out.println("Ничья");
                 break;
@@ -38,7 +38,7 @@ public class Main {
 
 
             enterR(DOT_O, map);
-            enterRY(DOT_Y, map);
+            //enterRY(DOT_Y, map);
 
         }
 
@@ -51,8 +51,8 @@ public class Main {
     public static final char DOT_EMPTY = '•';
     public static final char DOT_X = 'X';
     public static final char DOT_O = 'O';
-    public static final char DOT_Y = 'Y';
-    public static final int SIZE = 5;
+   // public static final char DOT_Y = 'Y';
+    public static final int SIZE = 3;
 
     static char[][] createField (int SIZE, char DOT_EMPTY) { ;
         char[][] arr = new char[SIZE][SIZE];
